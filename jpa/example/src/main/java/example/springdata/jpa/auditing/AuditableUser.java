@@ -30,25 +30,25 @@ import org.springframework.data.jpa.domain.AbstractAuditable;
 @Entity
 public class AuditableUser extends AbstractAuditable<AuditableUser, Long> {
 
-	private static final long serialVersionUID = 1L;
+    private static final long serialVersionUID = 1L;
 
-	private String username;
+    private String username;
 
-	/**
-	 * Set's the user's name.
-	 * 
-	 * @param username the username to set
-	 */
-	public void setUsername(String username) {
-		this.username = username;
-	}
+    /**
+     * Set's the user's name.
+     * 
+     * @param username the username to set
+     */
+    public void setUsername(String username) {
+        this.username = username;
+    }
 
-	/**
-	 * Returns the user's name.
-	 * 
-	 * @return the username
-	 */
-	public String getUsername() {
-		return username;
-	}
+    /**
+     * Returns the user's name.
+     * 
+     * @return the username
+     */
+    public String getUsername() {
+        return username;
+    }
 }
